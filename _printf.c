@@ -37,6 +37,13 @@ int _printf(const char *format, ...)
 					break;
 				case '\n':
 					_putchar('\n');
+					break;
+				case 'd':
+					count += print_int(va_arg(vl, int));
+					break;
+				case 'i':
+					count += print_int(va_arg(vl, int));
+					break;
 				}
 				flag = 0;
 			}
