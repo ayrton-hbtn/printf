@@ -11,6 +11,8 @@ int print_int(int num)
 	int x = num;
 	int i = 0;
 
+	if (num == 0)
+		_putchar('0');
 	if (num)
 	{
 		if (num < 0)

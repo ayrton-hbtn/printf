@@ -63,6 +63,9 @@ int _printf(const char *format, ...)
 				case 'S':
 					count += print_Str(va_arg(vl, char *));
 					break;
+				/*case 'p':
+					count += print_ptr(va_arg(vl, int));
+					break;*/
 				}
 				flag = 0;
 			}

@@ -11,5 +11,6 @@ int print_hex(int num);
 int print_hexMin(int num);
 int print_oct(int num);
 int print_unt(int num);
+int print_ptr(int num);
 
 #endif
