@@ -8,9 +8,9 @@
 int print_hexMin(int num)
 {
 	int count = 0;
-	
+
 	if (num)
-	{	
+	{
 		if (num >= 1)
 		{
 			print_hexMin(num / 16);

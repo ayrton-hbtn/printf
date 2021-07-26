@@ -8,7 +8,7 @@
   */
 int print_Str(char *c)
 {
-	int i; 
+	int i;
 
 	for (i = 0; c[i]; i++)
 	{

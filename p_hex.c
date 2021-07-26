@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * print_bin - print the binary of the number
+  * print_hex - print hex format of decimal num
   * @num: int
   *
   * Return: number of bytes
@@ -8,9 +8,9 @@
 int print_hex(int num)
 {
 	int count = 0;
-	
+
 	if (num)
-	{	
+	{
 		if (num >= 1)
 		{
 			print_hex(num / 16);
