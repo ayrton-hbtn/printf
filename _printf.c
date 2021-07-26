@@ -10,8 +10,7 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int i = 0, count = 0, flag = 0;
-	if (format[0] == '%' && format[1] == '\0')
-		return (-1);
+	
 	if (format)
 	{
 		va_start(vl, format);
@@ -20,6 +19,8 @@ int _printf(const char *format, ...)
 			if (!flag)
 			{
 				if (format[i] != '%')
+					count += _putchar(format[i]);
+				else if (format[i + 1] == '%')
 					count += _putchar(format[i]);
 				else
 					flag = 1;
@@ -34,9 +35,9 @@ int _printf(const char *format, ...)
 				case 's':
 					count += print_str(va_arg(vl, char *));
 					break;
-				case '%':
+				/*case '%':
 					count += _putchar('%');
-					break;
+					break;*/
 				case 'd':
 					count += print_int(va_arg(vl, int));
 					break;
