@@ -16,7 +16,7 @@ int print_unt(unsigned int num)
 	if (num)
 	{
 		if ((x / 10) > 0)
-			print_unt(x / 10);
+			i += print_unt(x / 10);
 		_putchar((x % 10) + '0');
 		i++;
 	}

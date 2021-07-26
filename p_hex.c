@@ -13,7 +13,7 @@ int print_hex(unsigned int num)
 	{
 		if (num >= 1)
 		{
-			print_hex(num / 16);
+			count += print_hex(num / 16);
 			if ((num % 16) > 9 && (num % 16) < 16)
 			{
 				count += _putchar((num % 16) + 55);

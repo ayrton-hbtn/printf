@@ -13,7 +13,7 @@ int print_bin(unsigned int num)
 	{
 		if (num >= 1)
 		{
-			print_bin(num / 2);
+			count += print_bin(num / 2);
 			count += _putchar((num % 2) + '0');
 		}
 		else

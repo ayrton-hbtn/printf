@@ -13,7 +13,7 @@ int print_oct(unsigned int num)
 	{
 		if (num >= 1)
 		{
-			print_oct(num / 8);
+			count += print_oct(num / 8);
 			count += _putchar((num % 8) + '0');
 		}
 		else

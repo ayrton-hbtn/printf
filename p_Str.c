@@ -18,7 +18,7 @@ int print_Str(char *c)
 			_putchar('x');
 			if (c[i] <= 16)
 				_putchar('0');
-			print_hex(c[i]);
+			i += print_hex(c[i]);
 		}
 		else
 		{
