@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 					count += print_int(va_arg(vl, int));
 					break;
 				case 'i':
-					count += print_int(va_arg(vl, unsigned int));
+					count += print_int(va_arg(vl, int));
 					break;
 				case 'b':
 					count += print_bin(va_arg(vl, unsigned int));
@@ -63,13 +63,15 @@ int _printf(const char *format, ...)
 				case 'S':
 					count += print_Str(va_arg(vl, char *));
 					break;
+				case '\0':
+					return (-1);
 				}
 				flag = 0;
 			}
 		}
 		va_end(vl);
 	}
-	else
+	else if (!format || (format[0] == '%' && format[1] == '\0'))
 	{
 		return (-1);
 	}
