@@ -6,7 +6,7 @@ int _putchar(char c);
 int print_str(char *c);
 int print_int(int num);
 int print_Str(char *c);
-int print_bin(int num);
+int print_bin(unsigned int num);
 int print_hex(int num);
 int print_hexMin(int num);
 int print_oct(int num);

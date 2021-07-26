@@ -43,10 +43,10 @@ int _printf(const char *format, ...)
 					count += print_int(va_arg(vl, int));
 					break;
 				case 'i':
-					count += print_int(va_arg(vl, int));
+					count += print_int(va_arg(vl, unsigned int));
 					break;
 				case 'b':
-					count += print_bin(va_arg(vl, int));
+					count += print_bin(va_arg(vl, unsigned int));
 					break;
 				case 'u':
 					count += print_unt(va_arg(vl, int));
