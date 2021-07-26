@@ -5,7 +5,7 @@
   *
   * Return: number of bytes
   */
-int print_hexMin(int num)
+int print_hexMin(unsigned int num)
 {
 	int count = 0;
 

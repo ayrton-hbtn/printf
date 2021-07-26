@@ -49,16 +49,16 @@ int _printf(const char *format, ...)
 					count += print_bin(va_arg(vl, unsigned int));
 					break;
 				case 'u':
-					count += print_unt(va_arg(vl, int));
+					count += print_unt(va_arg(vl, unsigned int));
 					break;
 				case 'o':
 					count += print_oct(va_arg(vl, int));
 					break;
 				case 'x':
-					count += print_hexMin(va_arg(vl, int));
+					count += print_hexMin(va_arg(vl, unsigned int));
 					break;
 				case 'X':
-					count += print_hex(va_arg(vl, int));
+					count += print_hex(va_arg(vl, unsigned int));
 					break;
 				case 'S':
 					count += print_Str(va_arg(vl, char *));
@@ -68,6 +68,10 @@ int _printf(const char *format, ...)
 			}
 		}
 		va_end(vl);
+	}
+	else
+	{
+		return (-1);
 	}
 	return (count);
 }
