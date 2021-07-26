@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stddef.h>
 /**
   * print_str - print a string of char
   * @c: pointer to string
@@ -9,7 +9,7 @@ int print_str(char *c)
 {
 	int i = 0;
 
-	if (!c)
+	if (c == NULL)
 	{
 		c = "(null)";
 	}
