@@ -36,9 +36,6 @@ int _printf(const char *format, ...)
 				case '%':
 					count += _putchar('%');
 					break;
-				case '\n':
-					_putchar('\n');
-					break;
 				case 'd':
 					count += print_int(va_arg(vl, int));
 					break;
