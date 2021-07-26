@@ -5,7 +5,7 @@
   *
   * Return: number of bytes
   */
-int print_hexMin(unsigned int num)
+int print_hexMin(int num)
 {
 	int count = 0;
 
@@ -22,6 +22,10 @@ int print_hexMin(unsigned int num)
 			{
 				count += _putchar((num % 16) + '0');
 			}
+		}
+		else
+		{
+			return (-1);
 		}
 	}
 	return (count);

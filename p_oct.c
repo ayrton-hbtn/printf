@@ -16,6 +16,10 @@ int print_oct(int num)
 			print_oct(num / 8);
 			count += _putchar((num % 8) + '0');
 		}
+		else
+		{
+			return (-1);
+		}
 	}
 	return (count);
 }

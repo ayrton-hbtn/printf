@@ -43,32 +43,35 @@ int _printf(const char *format, ...)
 					count += print_int(va_arg(vl, int));
 					break;
 				case 'b':
-					count += print_bin(va_arg(vl, unsigned int));
+					count += print_bin(va_arg(vl, int));
 					break;
 				case 'u':
-					count += print_unt(va_arg(vl, unsigned int));
+					count += print_unt(va_arg(vl, int));
 					break;
 				case 'o':
 					count += print_oct(va_arg(vl, int));
 					break;
 				case 'x':
-					count += print_hexMin(va_arg(vl, unsigned int));
+					count += print_hexMin(va_arg(vl, int));
 					break;
 				case 'X':
-					count += print_hex(va_arg(vl, unsigned int));
+					count += print_hex(va_arg(vl, int));
 					break;
 				case 'S':
 					count += print_Str(va_arg(vl, char *));
 					break;
 				case '\0':
 					return (-1);
+				default:
+					count += _putchar('%');
+					count += _putchar(format[i]);
 				}
 				flag = 0;
 			}
 		}
 		va_end(vl);
 	}
-	else if (!format || (format[0] == '%' && format[1] == '\0'))
+	else
 	{
 		return (-1);
 	}
