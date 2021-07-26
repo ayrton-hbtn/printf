@@ -8,7 +8,7 @@ int print_int(int num);
 int print_Str(char *c);
 int print_bin(unsigned int num);
 int print_hex(unsigned int num);
-int print_hexMin(unsigned int num);
+int print_hexlow(unsigned int num);
 int print_oct(unsigned int num);
 int print_unt(unsigned int num);
 int print_ptr(int num);

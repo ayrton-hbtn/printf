@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 					count += print_oct(va_arg(vl, unsigned int));
 					break;
 				case 'x':
-					count += print_hexMin(va_arg(vl, unsigned int));
+					count += print_hexlow(va_arg(vl, unsigned int));
 					break;
 				case 'X':
 					count += print_hex(va_arg(vl, unsigned int));

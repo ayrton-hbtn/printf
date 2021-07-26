@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * p_Str - prints string with custom conversion specifier
+  * print_Str - prints string with custom conversion specifier
   * @c: pointer to string
   * Description - special and non printable characters are replaced by their
   * ASCII code in hex

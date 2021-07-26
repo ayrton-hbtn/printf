@@ -3,7 +3,7 @@
 /**
   * print_str - print a string of char
   * @c: pointer to string
-  *
+  * Return: int, print count
   */
 int print_str(char *c)
 {
