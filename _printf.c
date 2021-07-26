@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int i = 0, count = 0, flag = 0;
-	
+
 	if (format)
 	{
 		va_start(vl, format);
