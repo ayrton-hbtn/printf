@@ -6,9 +6,9 @@
  *
  * Return: int
  */
-int print_unt(int num)
+int print_unt(unsigned int num)
 {
-	int x = num;
+	unsigned int x = num;
 	int i = 0;
 
 	if (num <= 0)
