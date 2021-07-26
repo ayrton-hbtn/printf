@@ -60,6 +60,12 @@ int _printf(const char *format, ...)
 				case 'S':
 					count += print_Str(va_arg(vl, char *));
 					break;
+				case 'R':
+					count += print_rot13(va_arg(vl, char *));
+					break;
+				case 'r':
+					count += print_rev(va_arg(vl, char *));
+					break;
 				case '\0':
 					return (-1);
 				default:

@@ -12,5 +12,7 @@ int print_hexMin(unsigned int num);
 int print_oct(unsigned int num);
 int print_unt(unsigned int num);
 int print_ptr(int num);
+int print_rot13(char *c);
+int print_rev(char *c);
 
 #endif
