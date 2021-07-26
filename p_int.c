@@ -19,7 +19,7 @@ int print_int(int num)
 			x = -x;
 		}
 		if ((x / 10) > 0)
-			print_int(x / 10);
+		 	i += print_int(x / 10);
 		i += _putchar((x % 10) + '0');
 	}
 	else
