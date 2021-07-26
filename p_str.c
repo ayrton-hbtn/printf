@@ -9,6 +9,10 @@ int print_str(char *c)
 {
 	int i = 0;
 
+	if (!c)
+	{
+		c = "(null)";
+	}
 	if (c)
 	{
 		for (; c[i] != '\0'; i++)
