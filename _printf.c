@@ -59,6 +59,9 @@ int _printf(const char *format, ...)
 				case 'X':
 					count += print_hex(va_arg(vl, int));
 					break;
+				case 'S':
+					count += print_Str(va_arg(vl, char *));
+					break;
 				}
 				flag = 0;
 			}
