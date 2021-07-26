@@ -44,6 +44,21 @@ int _printf(const char *format, ...)
 				case 'i':
 					count += print_int(va_arg(vl, int));
 					break;
+				case 'b':
+					count += print_bin(va_arg(vl, int));
+					break;
+				case 'u':
+					count += print_unt(va_arg(vl, int));
+					break;
+				case 'o':
+					count += print_oct(va_arg(vl, int));
+					break;
+				case 'x':
+					count += print_hexMin(va_arg(vl, int));
+					break;
+				case 'X':
+					count += print_hex(va_arg(vl, int));
+					break;
 				}
 				flag = 0;
 			}
