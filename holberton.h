@@ -15,6 +15,5 @@ int print_unt(unsigned int num);
 int print_ptr(int num);
 int print_rot13(char *c);
 int print_rev(char *c);
-int print_octH(unsigned int num);
 
 #endif

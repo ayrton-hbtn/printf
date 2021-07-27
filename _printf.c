@@ -78,13 +78,6 @@ int _printf(const char *format, ...)
 						i++;
 						break;
 					}
-				case '#':
-					if (format[i + 1] == 'o')
-					{
-						count += print_octH(va_arg(vl, unsigned int));
-						i++;
-						break;
-					}
 				case '\0':
 				case ' ':
 					return (-1);
