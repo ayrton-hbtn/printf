@@ -5,13 +5,19 @@
   *
   * Return: number of bytes
   */
-int print_oct(unsigned int num)
+int print_octH(unsigned int num)
 {
 	unsigned int x = num;
 	int count = 0;
 
+	if (num == 0)
+	{
+		count += _putchar('0');
+		count += _putchar('0');
+	}
 	if (num)
 	{
+		count += _putchar('0');
 		if (x >= 1)
 		{
 			count += print_oct(x / 8);
