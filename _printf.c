@@ -71,13 +71,6 @@ int _printf(const char *format, ...)
 				case 'r':
 					count += print_rev(va_arg(vl, char *));
 					break;
-				case '+':
-					if (format[i + 1] == 'd')
-					{
-						count += print_plus_int(va_arg(vl, int));
-						i++;
-						break;
-					}
 				case '\0':
 				case ' ':
 					return (-1);

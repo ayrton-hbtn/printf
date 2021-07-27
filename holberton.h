@@ -5,7 +5,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_str(char *c);
 int print_int(long int num);
-int print_plus_int(long int num);
 int print_Str(char *c);
 int print_bin(unsigned int num);
 int print_hex(unsigned int num);
