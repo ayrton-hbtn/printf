@@ -1,5 +1,4 @@
 #include <unistd.h>
-#define BUF_SIZE 1024
 
 /**
  * _putchar - writes the character c to stdout
@@ -10,5 +9,5 @@
  */
 int _putchar(char c)
 {
-	return (write(1, &c, BUF_SIZE));
+	return (write(1, &c, 1));
 }

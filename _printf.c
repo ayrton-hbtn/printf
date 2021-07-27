@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdarg.h>
+#define BUF_SIZE 1024
 /**
  * _printf - prints text to screen, redirects num of bytes to stdout
  * @format: character string
