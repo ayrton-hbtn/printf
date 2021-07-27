@@ -21,5 +21,9 @@ int print_bin(unsigned int num)
 			return (-1);
 		}
 	}
+	else
+	{
+		return (-1);
+	}
 	return (count);
 }

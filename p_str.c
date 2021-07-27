@@ -7,7 +7,7 @@
   */
 int print_str(char *c)
 {
-	int i = 0;
+	int i = 0, count = 0;
 
 	if (c == NULL)
 	{
@@ -17,7 +17,7 @@ int print_str(char *c)
 	{
 		for (; c[i] != '\0'; i++)
 		{
-			_putchar(c[i]);
+			count += _putchar(c[i]);
 		}
 	}
 	return (i);
