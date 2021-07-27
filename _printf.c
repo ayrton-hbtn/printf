@@ -20,6 +20,11 @@ int _printf(const char *format, ...)
 			{
 				if (format[i] != '%')
 					count += _putchar(format[i]);
+				else if (format[i + 1] == '%')
+				{
+					count += _putchar(format[i]);
+					i++;
+				}
 				else
 					flag = 1;
 			}
@@ -32,9 +37,6 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					count += print_str(va_arg(vl, char *));
-					break;
-				case '%':
-					count += _putchar('%');
 					break;
 				case 'd':
 					count += print_int(va_arg(vl, int));
@@ -67,7 +69,7 @@ int _printf(const char *format, ...)
 					count += print_rev(va_arg(vl, char *));
 					break;
 				case '\0':
-				case ' ': 
+				case ' ':
 					return (-1);
 				default:
 					count += _putchar('%');
