@@ -9,7 +9,7 @@
 int print_int(long int num)
 {
 	long int x = num;
-	long int i = 0;
+	int i = 0;
 
 	if (num)
 	{
