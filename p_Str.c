@@ -8,22 +8,22 @@
   */
 int print_Str(char *c)
 {
-	int i;
+	int i, count = 0;
 
 	for (i = 0; c[i]; i++)
 	{
 		if ((c[i] > 0 && c[i] < 32) || (c[i] >= 127))
 		{
-			_putchar('\\');
-			_putchar('x');
+			count += _putchar('\\');
+			count += _putchar('x');
 			if (c[i] <= 16)
-				_putchar('0');
-			i += print_hex(c[i]);
+				count += _putchar('0');
+			count += print_hex(c[i]);
 		}
 		else
 		{
-			_putchar(c[i]);
+			count += _putchar(c[i]);
 		}
 	}
-	return (i);
+	return (count);
 }
