@@ -6,9 +6,9 @@
  *
  * Return: int, byte count
  */
-int print_int(long int num)
+int print_int(int num)
 {
-	long int x = num;
+	int x = num;
 	int i = 0;
 
 	if (num)
