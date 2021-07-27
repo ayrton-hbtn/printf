@@ -20,5 +20,5 @@ int print_str(char *c)
 			count += _putchar(c[i]);
 		}
 	}
-	return (i);
+	return (count);
 }

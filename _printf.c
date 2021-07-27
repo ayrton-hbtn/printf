@@ -9,6 +9,7 @@
 int _printf(const char *format, ...)
 {
 	va_list vl;
+	char *st;
 	int i = 0, count = 0, flag = 0;
 
 	if (format)
@@ -19,7 +20,7 @@ int _printf(const char *format, ...)
 			if (!flag)
 			{
 				if (format[i] != '%')
-					count += _putchar(format[i]);
+						count += _putchar(format[i]);
 				else if (format[i + 1] == '%')
 				{
 					count += _putchar(format[i]);
