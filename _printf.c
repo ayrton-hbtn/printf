@@ -67,6 +67,7 @@ int _printf(const char *format, ...)
 					count += print_rev(va_arg(vl, char *));
 					break;
 				case '\0':
+				case ' ': 
 					return (-1);
 				default:
 					count += _putchar('%');
