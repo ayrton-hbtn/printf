@@ -12,7 +12,7 @@ int print_Str(char *c)
 
 	for (i = 0; c[i]; i++)
 	{
-		if ((c[i] >= 0 && c[i] <= 32) || (c[i] >= 127))
+		if ((c[i] > 0 && c[i] < 32) || (c[i] >= 127))
 		{
 			_putchar('\\');
 			_putchar('x');
