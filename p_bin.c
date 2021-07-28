@@ -5,7 +5,7 @@
   *
   * Return: number of bytes
   */
-int print_bin(unsigned long int num)
+int print_bin(unsigned int num)
 {
 	int count = 0;
 
