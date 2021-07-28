@@ -5,7 +5,7 @@
   *
   * Return: number of bytes
   */
-int print_oct(unsigned int num)
+int print_oct(unsigned long int num)
 {
 	int count = 0;
 
